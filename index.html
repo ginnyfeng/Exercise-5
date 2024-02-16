@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
 <head>
-    <meta charset="utf-8" />
-    <title>Exercise 5</title>
-    <script src="hello.js"></script>
-    <link rel="stylesheet" href="style.css">
+<title>Exercise 5</title>
 </head>
+
+<center>
 <body>
-    <script src="hello.js"></script>
-    <center><h1>Exercise 5 by Ginny Feng</h1></center>
-    <div id="demobox">
-        <form form ="Login_form" onsubmit="submit_form()">
-        <center><hp3><b>Enter your details below:</b></hp3></center>
-        <center><form action="action_page.php" method="GET"></center>
-            <div>
-                <center><label for="fname"><i>First Name</i></label></center>
-                <center><input type="text" id="fname" name="fname" placeholder=""></center> 
-            </div>
-            <br>
-            <div>
-                <center><label for="lname"><i>Last Name</i></label></center>
-                <center><input type="text" id="lname" name="lname" placeholder=""></center> 
-            </div>
-            <br>
-            <div>
-                <center><label for="age"><i>Age</i></label></center>
-                <center><input type="text" id="age" name="age" placeholder=""></center> 
-            </div>
-            <br>
-            <div>
-                <center><label for="phone"><i>Phone Number</i></label></center>
-                <center><input type="text" id="phone" name="phone" placeholder=""></center> 
-            </div>
-            <br>
-            <div>
-                <center><input type="submit"></center>
-            </div>
-            
-            <br>
-            
-            <div>
-                <center><input type="reset"></center>
-            </div>
-        </form>
-        </div>
-        <script type="text/javascript">  
-            function submit_form(){  
-            alert("Login successful");  
-            }  
-            function create(){  
-            window.location="signup.html";  
-            }  
-            </script>  
+	<h1 style="text-align: center;">
+		Epic Form
+	</h1>
+	<form name="Form"
+	action="/action_page.php"
+	onsubmit="return validateForm()" method="post">
+		<p>
+			First Name:
+			<input type="text" size="65" name="firstname"
+				placeholder="Please enter your first name" />
+		</p>
+		<br />
+		<p>
+			Last Name:
+			<input type="text" size="65"
+				name="lastname"
+				placeholder="Please enter your last name" />
+		</p>
+		<br />
+		<p>
+			Age:
+			<input type="age" size="65"
+				name="age"
+				placeholder="Please enter your age" />
+		</p>
+		<br />
+		<p>
+			Phone Number:
+			<input type="phone" size="65"
+				name="phone"
+				placeholder="Please enter your phone number" />
+		</p>
+	</form>
+	<center><input type="Submit" value="Submit"></center>
+	<br />
+	<center><input type="Reset" value="Reset"></center>
 </body>
+</center>
+
 </html>
+
+
